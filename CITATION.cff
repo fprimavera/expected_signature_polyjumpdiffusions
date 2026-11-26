@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "poly_jump_signature: expected signature of polynomial jump-diffusions"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/fprimavera/expected_signature_polyjumpdiffusions"
+authors:
+  - family-names: Cuchiero
+    given-names: Christa
+  - family-names: Primavera
+    given-names: Francesca
+  - family-names: Svaluto-Ferro
+    given-names: Sara
+preferred-citation:
+  type: article
+  title: "Entire sig-jump-diffusions, their expected signature and applications to score-based generative modeling"
+  authors:
+    - family-names: Cuchiero
+      given-names: Christa
+    - family-names: Primavera
+      given-names: Francesca
+    - family-names: Svaluto-Ferro
+      given-names: Sara
+  year: 2026
+  journal: "arXiv preprint"
+  identifiers:
+    - type: other
+      value: "arXiv:2611.16995"
+      description: arXiv identifier
+  url: "https://arxiv.org/abs/2611.16995"

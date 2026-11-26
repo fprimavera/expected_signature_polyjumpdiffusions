@@ -1,0 +1,13 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+pytest>=7.4
+jupyter>=1.0
+matplotlib>=3.7
+ipython-autotime>=0.3
+
+# Used only by notebooks/expected_signature_poly_jump_diffusions.ipynb, to compute
+# the signature of each simulated path.  It builds from source and needs numpy
+# already present, so install it without build isolation if pip fails:
+#     pip install iisignature --no-build-isolation
+iisignature>=0.24

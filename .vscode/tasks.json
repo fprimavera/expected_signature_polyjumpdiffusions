@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run current file as module",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "F=\"$1\"; MOD=\"${F%.py}\"; MOD=\"${MOD//\\//.}\"; echo \"Running: python -m $MOD\"; cd \"$2\" && \"$3\" -m \"$MOD\"",
+        "--",
+        "${relativeFile}",
+        "${workspaceFolder}",
+        "${command:python.interpreterPath}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
